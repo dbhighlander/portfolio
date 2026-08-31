@@ -1,0 +1,27 @@
+.button{
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  backdrop-filter: blur(0.5rem);
+  opacity: 0.8;
+  background-color: var(--bg-theme-toggle);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 15px -6px rgb(0 0 0 / 0.3);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms;
+  color: var(--text-gray-950);
+  will-change: transform;
+}
+
+.button:hover{
+  transform: scale(115%);
+}
+
+.button:active{
+  transform: scale(105%);
+}

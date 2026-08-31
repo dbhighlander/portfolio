@@ -1,0 +1,15 @@
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  color: var(--text-skill-tag); 
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill {
+  background-color: var(--bg-skill-tag);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 0.75rem 1.25rem ;
+}

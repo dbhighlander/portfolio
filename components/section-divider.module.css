@@ -1,0 +1,15 @@
+.divider{
+  background-color: var(--section-divider);
+  margin-block:8rem;
+  height: 3rem;
+  width: 3px;
+  border-radius: 6px;
+  display: none;
+  margin: 6rem auto;
+}
+
+@media (min-width: 32rem) {
+  .divider{
+    display: block;
+  }
+}

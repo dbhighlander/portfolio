@@ -1,0 +1,11 @@
+.aboutContainer {
+  text-align: center;
+  scroll-margin-top: 6.6rem;
+  width: min(calc(100% - 32px), 800px);
+}
+
+.aboutParagraph {
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  line-height: 2rem;
+}

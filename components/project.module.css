@@ -1,0 +1,114 @@
+.projectCardContainer {
+  &:not(:last-of-type) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.projectCard {
+  text-align: left;
+  background-color: var(--bg-card);
+  max-width: 42rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+}
+
+.projectCard:hover {
+  background-color: var(--bg-card-hover);
+  transition: 200ms;
+}
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.projectDescription {
+  color: var(--text-card);
+  margin-top: 0.5rem;
+  margin-bottom:0.5rem;
+}
+
+.projectImage {
+  position: absolute;
+  top: 2rem;
+  right: -10rem;
+  width: 28.25rem;
+  object-fit: scale-down;
+  border-top-left-radius: 8px;
+  box-shadow: 0 10px 15px -6px rgb(0 0 0 / 0.3);
+  object-position: 0 0;
+  transition: 200ms;
+  display: none;
+}
+
+.projectCardContainer:nth-of-type(2n) .projectImage {
+  right: initial;
+  border-top-right-radius: 8px;
+  left: -10rem;
+}
+
+.projectInfo {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCardContainer:hover .projectImage {
+  transform: translate(-0.75rem, 0.75rem) scale(1.04) rotate(-1deg);
+}
+
+.projectCardContainer:nth-of-type(2n):hover .projectImage {
+  transform: translate(0.75rem, 0.75rem) scale(1.04) rotate(1deg);
+}
+
+.tagList {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.tag {
+  background: rgba(0, 0, 0, 0.7);
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 50px;
+  list-style-type: none;
+}
+
+@media (min-width: 32rem) {
+  .projectCard {
+    height: 20rem;
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .projectCardContainer {
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .projectInfo {
+    padding: 2.5rem;
+    max-width: 50%;
+  }
+  .projectCard {
+    padding-right: 2rem;
+  }
+
+  .projectImage {
+    display: block;
+  }
+
+  .projectCardContainer:nth-of-type(2n) .projectInfo {
+    margin-left: 20rem;
+  }
+}

@@ -1,0 +1,83 @@
+.contactText {
+  color: var(--contact-text);
+  margin-top: -1rem;
+}
+
+.contactForm {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactFormEmail {
+  height: 3.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-inline: 1rem;
+}
+
+.contactFormMessage {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 16px;
+  margin: 0.75rem 0;
+  height: 13rem;
+}
+
+.contactFormEmail.dark,
+.contactFormMessage.dark {
+  opacity: 0.8;
+  outline: none;
+  transition: all 250ms;
+}
+
+.contactFormEmail.dark:focus,
+.contactFormMessage.dark:focus {
+  opacity: 1;
+}
+
+
+
+.contactForm button[type="submit"] {
+  height: 3rem;
+  width: 8rem;
+  background-color: var(--bg-submit-btn);
+  outline: none;
+  border-radius: 40px;
+  color: var(--text-submit-btn);
+  transition: all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  transition: all 200ms;
+  will-change: transform;
+}
+
+.contactForm button[type="submit"] > svg {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  transition: all 200ms;
+}
+.contactForm button[type="submit"]:hover {
+  background-color: var(--submit-btn-hover);
+}
+.contactForm button[type="submit"]:hover,
+.contactForm button[type="submit"]:focus {
+  transform: scale(110%);
+}
+
+.contactForm button[type="submit"]:hover,
+.contactForm button[type="submit"]:focus {
+  transform: scale(105%);
+}
+
+.contactForm button[type="submit"]:hover > svg {
+  transform: translate(0.25rem, -0.25rem);
+}
+
+.contactForm button[type="submit"]:disabled {
+  transform: scale(100%);
+  opacity: 0.65;
+}

@@ -1,0 +1,15 @@
+.title{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.location{
+  font-weight: 400 !important;
+  margin-top: 0!important;
+}
+
+.description{
+  margin-top: 0!important;
+  font-weight: 400!important;
+  color: var(--text-experience-description)
+}
