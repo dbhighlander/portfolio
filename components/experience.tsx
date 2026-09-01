@@ -38,8 +38,8 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className={style.title}>{item.title}</h3>
-              <p className={style.location}>{item.location}</p>
+              <h3 className={style.title}>{item.title} {item.website && <span>(<a href={item.website} target="_blank">{item.linkname}</a>)</span>}</h3>
+               <p className={style.location}>{item.location}</p>
               <p className={style.description}>{item.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>

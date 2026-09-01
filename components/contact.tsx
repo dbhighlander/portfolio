@@ -27,7 +27,7 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
       <p className={style.contactText}>
         Please contact me directly as{" "}
-        <a href="mailto:example@example.com">example@example.com</a> or through
+        <a href="mailto:db.home.2468@gmail.com">db.home.2468@gmail.com</a> or through
         this form
       </p>
       <form

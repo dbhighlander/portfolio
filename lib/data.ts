@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { LuBookOpen } from "react-icons/lu";
 
 export const links = [
   {
@@ -35,28 +36,42 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Retrained Front-end  Developer / Author",
+    location: "Carnoustie, Scotland",
+    website: "",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "Whilst caring for family, I completed my book Managing Stress in Tech and released on Amazon. Upskilled in front-end development focusing on projects  using NextJS and modern CSS.",
+    icon: React.createElement(LuBookOpen),
+    date: "2025 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Full Stack Developer",
+    location: "Remote",
+    linkname: "Aline Digital",
+    website: "https://aline.digital",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Worked across the full-stack on a legacy PHP chatbot application, and numerous client projects.  Learned classic React using classes/hooks and improved front-end skills with CSS and responsive design.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2019 - 2025",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Web Developer",
+    location: "St Andrews, Scotland",
+    website: "https://www.teamcard.com",
+    linkname: "teamcard",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Focused on legacy ticketing systems written in PHP and older JavaScript libraries",
+    icon: React.createElement(CgWorkAlt),
+    date: "2014 - 2019",
+  },
+    {
+    title: "MSc Computing Science and IT",
+    location: "University of St Andrews, Scotland",
+    website: "",
+    description:
+      "Completed 1 year masters specialising in practical web applications.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2013 - 2014",
   },
 ] as const;
 
@@ -91,17 +106,15 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Zustand",
+  "Jest",
+  "Tailwind",
   "Framer Motion",
+  "Git",
+  "PHP",
+  "MySQL",
+  "Golang",
+  "AWS",
+  "Linux",
 ] as const;
