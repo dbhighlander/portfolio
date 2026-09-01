@@ -45,7 +45,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="bold">Hello, I'm David</span> - a web developer with{" "}
-        <span className="bold">10 years</span> of experience. My focus is
+        <span className="bold">5 years</span> of experience. My focus is
         React (Next.js), JavaScript (TypeScript) and CSS.
       </motion.h1>
       <motion.div

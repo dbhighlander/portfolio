@@ -49,7 +49,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  padding-inline: 0.5rem;
+  padding-inline: 2rem;
 }
 
 .li {
@@ -81,6 +81,38 @@
 .li:hover {
   color: var(--scroll-header-link-hover);
 }
+
+.arrow {
+  padding: 0.5rem;
+  background-color: white;
+  z-index: 3;
+  border-radius: 20px;
+  color: var(--text-gray-200);
+  border: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  box-shadow: 0 10px 15px -6px rgb(0 0 0 / 0.3);
+  cursor: pointer;
+  position: fixed;
+  display: none;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+@media (pointer: fine) {
+  .arrow {
+    display: block;
+  }
+}
+
+
 
 @media (min-width: 32rem) {
   .nav {
