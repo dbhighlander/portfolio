@@ -39,12 +39,14 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
             ))}
           </ul>
         </div>
-        <Image
-          className={style.projectImage}
-          src={imageUrl}
-          alt="Projects I worked on"
-          quality={95}
-        />
+        <div className={style.projectImageWrapper}>
+          <Image
+            className={style.projectImage}
+            src={imageUrl}
+            alt="Projects I worked on"
+            quality={95}
+          />
+        </div>
       </section>
     </motion.div>
   );

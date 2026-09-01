@@ -17,7 +17,7 @@ export default function Projects() {
       className={`container section-container ${style.projectContainer}`}
     >
       <SectionHeading>My Projects</SectionHeading>
-      <div>
+      <div className={style.projectsList}>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
