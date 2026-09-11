@@ -138,3 +138,12 @@
     transform: translate(0.75rem, 0.75rem) scale(1.04) rotate(1deg);
   }
 }
+
+.projectLink{
+  text-decoration: none;
+  color: inherit
+}
+
+.projectLinkIcon{
+  margin-left: 0.5rem;
+}

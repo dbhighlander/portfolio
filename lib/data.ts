@@ -2,10 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
-import { LuBookOpen } from "react-icons/lu";
+import carHubImg from "@/public/carhub.png";
+import chatbotImg from "@/public/chatbot.png";
+import educationSiteImg from "@/public/education-site.png";
 
 export const links = [
   {
@@ -78,25 +77,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "CarHub",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A landing search page for an ecommerce car site, incorporating filtering, API integrations and asynchronous loading.",
+    tags: ["React", "Next.js", "CSS", "Tailwind", "APIs", "Vercel"],
+    siteUrl: "https://carhub-sepia-omega.vercel.app/",
+    imageUrl: carHubImg,
   },
   {
-    title: "rmtDev",
+    title: "AI Chatbot Frontend",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A fun frontend project that presents an AI chatbot where users can talk to a Starwars character!  Aimed for a robust chat interface",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Cookies", "Golang", "AI Intergration", "Vercel"],
+    siteUrl: "https://star-wars-chat-frontend.vercel.app/",
+    imageUrl: chatbotImg,
   },
   {
-    title: "Word Analytics",
+    title: "Education Admin",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A prototype for an education admin portal. I taught myself next.js and the ecosystem of modern React: SSR and CSR.",
+    tags: ["React", "Next.js", "Tailwind", "React Charts"],
+    siteUrl: "https://education-dashboard-six.vercel.app/admin",
+    imageUrl: educationSiteImg,
   },
 ] as const;
 

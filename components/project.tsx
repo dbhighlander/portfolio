@@ -4,10 +4,12 @@ import style from "./project.module.css";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { FaLink } from "react-icons/fa";
+import { BsBoxArrowInUpRight, BsLink } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl }: ProjectProps) {
+function Project({ title, description, tags, imageUrl, siteUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -29,8 +31,8 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
     >
       <section className={style.projectCard}>
         <div className={style.projectInfo}>
-          <h3 className={style.projectTitle}>{title}</h3>
-          <a href='/' target="_blank">Live Site</a>
+          <h3 className={style.projectTitle}><a href={siteUrl} className={style.projectLink} target="_blank" rel="noopener noreferrer">{title}<span className={style.projectLinkIcon}><BsBoxArrowInUpRight/></span></a></h3>
+          
           <p className={style.projectDescription}>{description}</p>
           <ul className={style.tagList}>
             {tags.map((tag, index) => (
