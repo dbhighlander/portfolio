@@ -36,12 +36,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Retrained Front-end  Developer / Author",
+    title: "Retrained Front-end Developer / Author",
     location: "Carnoustie, Scotland",
-    website: "",
+    linkname: "Amazon Listing",
+    website: "https://www.amazon.co.uk/Managing-Stress-Tech-Industry-Situations/dp/B0HC41XZBP",
     description:
-      "Whilst caring for family, I completed my book Managing Stress in Tech and released on Amazon. Upskilled in front-end development focusing on projects  using NextJS and modern CSS.",
-    icon: React.createElement(LuBookOpen),
+      "Whilst caring for family, I completed my book Managing Stress in Tech and released on Amazon. Upskilled in front-end development focusing on projects using NextJS, TypeScript and modern CSS.",
+    icon: React.createElement(FaReact),
     date: "2025 - Present",
   },
   {
@@ -69,7 +70,7 @@ export const experiencesData = [
     location: "University of St Andrews, Scotland",
     website: "",
     description:
-      "Completed 1 year masters specialising in practical web applications.",
+      "Completed 1 year postgraduate specialising in practical web applications.",
     icon: React.createElement(LuGraduationCap),
     date: "2013 - 2014",
   },
@@ -111,10 +112,10 @@ export const skillsData = [
   "Jest",
   "Tailwind",
   "Framer Motion",
-  "Git",
   "PHP",
   "MySQL",
   "Golang",
   "AWS",
   "Linux",
+  "Git",
 ] as const;

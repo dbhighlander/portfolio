@@ -30,6 +30,7 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
       <section className={style.projectCard}>
         <div className={style.projectInfo}>
           <h3 className={style.projectTitle}>{title}</h3>
+          <a href='/' target="_blank">Live Site</a>
           <p className={style.projectDescription}>{description}</p>
           <ul className={style.tagList}>
             {tags.map((tag, index) => (

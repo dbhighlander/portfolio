@@ -20,19 +20,26 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className={style.aboutParagraph}>
-        After working for many years as a full-stack developer, I've switched to
-        front-end development. My core stack is{" "}
+        I'm an experienced developer that's spent the last 10 years helping
+        build commerical applications. My core stack is{" "}
         <span className="bold">React</span>,{" "}
         <span className="bold">Next.js, JavaScript(TypeScript)</span>,{" "}
         <span className="bold">CSS</span> and{" "}
-        <span className="bold">Tailwind</span>. I do however have substantial
-        experience working on the backend with <span className="bold">PHP</span> and <span className="bold">MySQL</span> and various cloud technologies in <span className="bold">AWS</span>. I always feel at
-        home working on technical challenges and learning new things.
+        <span className="bold">Tailwind</span>. While I have
+         experience on the backend with{" "}
+        <span className="bold">PHP</span>, <span className="bold">Go</span> and{" "}
+        <span className="bold">MySQL</span> and various cloud technologies in{" "}
+        <span className="bold">AWS</span>, I feel I do my best work on
+        the front-end. This is where I aim to take my career next. 
       </p>
       <p className={style.aboutParagraph}>
-        When I'm not coding, I enjoy getting outdoors, playing with the dog and
+        I always feel at home working on technical challenges and learning new things. When I'm not coding, I enjoy getting outdoors, playing with the dog and
         watching films. Currently got into playing online chess and welcome any
         tips!
+      </p>
+
+      <p className={style.aboutParagraph}>
+        At this stage of my career, I'm deliberately looking for a <span className="bold">sustainable, hands-on development role </span> with a sensible workload and clear expectations. I'm more interested in doing good work in a role I can enjoy and sustain long-term than in pursuing management, leadership or career progression for its own sake.
       </p>
     </motion.section>
   );

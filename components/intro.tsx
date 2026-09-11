@@ -44,10 +44,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="bold">Hello, I'm David</span> - a web developer with{" "}
-        <span className="bold">many years</span> of experience. My focus is
-        React (Next.js), JavaScript (TypeScript) and CSS.
+        <span className="bold">David Burgess - Frontend Web Developer</span>
       </motion.h1>
+      <motion.p
+        className={style.subtitle}
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+       I enjoy building well-crafted web applications, solving technical problems, and seeing them through from idea to completion. I'm looking for a <span className="bold">hands-on frontend developer role</span>, with the option of frontend-focused full-stack work.
+      </motion.p>
       <motion.div
         className={style.buttonList}
         initial={{ opacity: 0, y: 100 }}
@@ -62,7 +67,8 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact<span className={style.hiddenMobile}> me here</span> <BsArrowRight />
+          Contact<span className={style.hiddenMobile}> me here</span>{" "}
+          <BsArrowRight />
         </Link>
         <a className={style.downloadButton} href="/CV.pdf" download>
           <span className={style.hiddenMobile}>Download </span>CV <HiDownload />
