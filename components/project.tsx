@@ -5,11 +5,18 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { FaLink } from "react-icons/fa";
-import { BsBoxArrowInUpRight, BsLink } from "react-icons/bs";
+import { BsBoxArrowInUpRight, BsGithub, BsLink } from "react-icons/bs";
 
 type ProjectProps = (typeof projectsData)[number];
 
-function Project({ title, description, tags, imageUrl, siteUrl }: ProjectProps) {
+function Project({
+  title,
+  description,
+  tags,
+  imageUrl,
+  siteUrl,
+  githubUrl,
+}: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -31,8 +38,25 @@ function Project({ title, description, tags, imageUrl, siteUrl }: ProjectProps) 
     >
       <section className={style.projectCard}>
         <div className={style.projectInfo}>
-          <h3 className={style.projectTitle}><a href={siteUrl} className={style.projectLink} target="_blank" rel="noopener noreferrer">{title}<span className={style.projectLinkIcon}><BsBoxArrowInUpRight/></span></a></h3>
-          
+          <h3 className={style.projectTitle}>
+            <a
+              href={siteUrl}
+              className={style.projectLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+              <span className={style.projectLinkIcon}>
+                <BsBoxArrowInUpRight />
+              </span>
+            </a>
+            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+              <span className={style.projectLinkIcon}>
+                <BsGithub />
+              </span>
+            </a>
+          </h3>
+
           <p className={style.projectDescription}>{description}</p>
           <ul className={style.tagList}>
             {tags.map((tag, index) => (

@@ -83,6 +83,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "CSS", "Tailwind", "APIs", "Vercel"],
     siteUrl: "https://carhub-sepia-omega.vercel.app/",
     imageUrl: carHubImg,
+    githubUrl: "https://github.com/dbhighlander/carhub-demo"
   },
   {
     title: "AI Chatbot Frontend",
@@ -91,14 +92,16 @@ export const projectsData = [
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Cookies", "Golang", "AI Intergration", "Vercel"],
     siteUrl: "https://star-wars-chat-frontend.vercel.app/",
     imageUrl: chatbotImg,
+    githubUrl: "https://github.com/dbhighlander/star_wars_chat_frontend"
   },
   {
     title: "Education Admin",
     description:
-      "A prototype for an education admin portal. I taught myself next.js and the ecosystem of modern React: SSR and CSR.",
+      "A prototype for an education admin portal. I taught myself Next.js and the ecosystem of modern React: SSR and CSR.",
     tags: ["React", "Next.js", "Tailwind", "React Charts"],
     siteUrl: "https://education-dashboard-six.vercel.app/admin",
     imageUrl: educationSiteImg,
+    githubUrl: "https://github.com/dbhighlander/education-dashboard"
   },
 ] as const;
 

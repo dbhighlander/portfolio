@@ -1,5 +1,5 @@
 .aboutContainer {
-  text-align: center;
+  text-align: left;
   scroll-margin-top: 6.6rem;
   width: min(calc(100% - 32px), 800px);
 }

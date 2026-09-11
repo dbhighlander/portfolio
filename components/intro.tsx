@@ -51,7 +51,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-       I enjoy building well-crafted web applications, solving technical problems, and seeing them through from idea to completion. I'm looking for a <span className="bold">hands-on frontend developer role</span>, with the option of frontend-focused full-stack work.
+        I enjoy building well-crafted web applications and solving technical
+        problems. I'm seeking a{" "}
+        <span className="bold">hands-on frontend developer role</span>, with the
+        option of frontend-focused, full-stack work.
       </motion.p>
       <motion.div
         className={style.buttonList}
@@ -75,14 +78,14 @@ export default function Intro() {
         </a>
         <a
           className={style.linkedinButton}
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/david-burgess-2a55875b"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
           className={style.githubButton}
-          href="https://github.com"
+          href="https://github.com/dbhighlander"
           target="_blank"
         >
           <FaGithubSquare />
