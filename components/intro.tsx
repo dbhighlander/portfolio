@@ -29,7 +29,7 @@ export default function Intro() {
           }}
         >
           <Image
-            src="/db.jfif"
+            src="/db.jpeg"
             alt="David portrait"
             width={192}
             height={192}
