@@ -51,7 +51,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        I enjoy building well-crafted web applications and solving technical
+        With <span className="bold">10 years</span> of commercial experience, I enjoy building well-crafted web applications and solving technical
         problems. I'm seeking a{" "}
         <span className="bold">hands-on frontend developer role</span>, with the
         option of frontend-focused, full-stack work.

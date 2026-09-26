@@ -16,6 +16,7 @@ function Project({
   imageUrl,
   siteUrl,
   githubUrl,
+  challenges
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -58,6 +59,7 @@ function Project({
           </h3>
 
           <p className={style.projectDescription}>{description}</p>
+          <p className={style.projectDescription}><span className="bold">Challenges: </span>{challenges}</p>
           <ul className={style.tagList}>
             {tags.map((tag, index) => (
               <li key={index} className={style.tag}>

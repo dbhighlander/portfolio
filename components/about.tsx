@@ -21,7 +21,7 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <p className={style.aboutParagraph}>
         I'm an experienced developer that's spent the last 10 years helping
-        build commerical applications. My core stack is{" "}
+        build commercial applications. My core stack is{" "}
         <span className="bold">React</span>,{" "}
         <span className="bold">Next.js, JavaScript(TypeScript)</span>,{" "}
         <span className="bold">CSS</span> and{" "}

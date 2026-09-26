@@ -35,12 +35,13 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Retrained Front-end Developer / Author",
+    title: "Front-end Developer / Author",
     location: "Carnoustie, Scotland",
     linkname: "Amazon Listing",
-    website: "https://www.amazon.co.uk/Managing-Stress-Tech-Industry-Situations/dp/B0HC41XZBP",
+    website:
+      "https://www.amazon.co.uk/Managing-Stress-Tech-Industry-Situations/dp/B0HC41XZBP",
     description:
-      "Whilst caring for family, I completed my book Managing Stress in Tech and released on Amazon. Upskilled in front-end development focusing on projects using NextJS, TypeScript and modern CSS.",
+      "Improved front-end development skills focusing on personal projects using NextJS, TypeScript and modern CSS. Whilst caring for family, I completed my book Managing Stress in Tech and released on Amazon. ",
     icon: React.createElement(FaReact),
     date: "2025 - Present",
   },
@@ -60,11 +61,11 @@ export const experiencesData = [
     website: "https://www.teamcard.com",
     linkname: "teamcard",
     description:
-      "Focused on legacy ticketing systems written in PHP and older JavaScript libraries",
+      "Focused on legacy ticketing systems written in PHP and older JavaScript libraries.  Implemented REST API for ticket transactions handling 10,000s of data",
     icon: React.createElement(CgWorkAlt),
     date: "2014 - 2019",
   },
-    {
+  {
     title: "MSc Computing Science and IT",
     location: "University of St Andrews, Scotland",
     website: "",
@@ -78,30 +79,43 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "CarHub",
-    description:
-      "A landing search page for an ecommerce car site, incorporating filtering, API integrations and asynchronous loading.",
-    tags: ["React", "Next.js", "CSS", "Tailwind", "APIs", "Vercel"],
+    description: "A landing search page for an e-commerce car site. ",
+    challenges:
+      "State management, filtering, API integrations and asynchronous loading.",
+    tags: ["TypeScript", "React", "Next.js", "CSS", "APIs", "Vercel"],
     siteUrl: "https://carhub-sepia-omega.vercel.app/",
     imageUrl: carHubImg,
-    githubUrl: "https://github.com/dbhighlander/carhub-demo"
+    githubUrl: "https://github.com/dbhighlander/carhub-demo",
   },
   {
     title: "AI Chatbot Frontend",
+    challenges:
+      "Integrating cookies and persisting state, AI APIs, UI design ",
     description:
-      "A fun frontend project that presents an AI chatbot where users can talk to a Starwars character!  Aimed for a robust chat interface",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Cookies", "Golang", "AI Intergration", "Vercel"],
+      "AI chatbot where users can talk to a Starwars character!  Aimed for a robust chat interface",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Cookies",
+      "Golang",
+      "AI",
+      "Vercel",
+    ],
     siteUrl: "https://star-wars-chat-frontend.vercel.app/",
     imageUrl: chatbotImg,
-    githubUrl: "https://github.com/dbhighlander/star_wars_chat_frontend"
+    githubUrl: "https://github.com/dbhighlander/star_wars_chat_frontend",
   },
   {
-    title: "Education Admin",
+    title: "Education Site",
     description:
-      "A prototype for an education admin portal. I taught myself Next.js and the ecosystem of modern React: SSR and CSR.",
-    tags: ["React", "Next.js", "Tailwind", "React Charts"],
+      "Prototype for a portal",
+      challenges:
+      "Taught myself Next.js and the ecosystem of modern React: SSR and CSR. SSR design patterns, Site Architecture",
+    tags: ["React", "Next.js", "Tailwind", "React Charts", "Vercel"],
     siteUrl: "https://education-dashboard-six.vercel.app/admin",
     imageUrl: educationSiteImg,
-    githubUrl: "https://github.com/dbhighlander/education-dashboard"
+    githubUrl: "https://github.com/dbhighlander/education-dashboard",
   },
 ] as const;
 
